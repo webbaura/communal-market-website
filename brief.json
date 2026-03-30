@@ -1,0 +1,69 @@
+{
+  "business": {
+    "name": "Communal Market",
+    "industry": "hospitality",
+    "location": "Caulfield, Melbourne",
+    "website": null,
+    "phone": null,
+    "google_rating": 5.0,
+    "review_count": 118,
+    "existing_score": null,
+    "existing_issues": ["No website at all"],
+    "existing_strengths": ["Perfect 5-star rating", "118 Google reviews", "Community favourite", "Open 7 days"]
+  },
+  "existing_site": {
+    "url": null,
+    "content": "Communal Market — cafe, bakery and restaurant at 949 Glen Huntly Rd, Caulfield VIC 3162. Perfect 5-star Google rating with 118 reviews. Open Mon–Fri 6:30am–2pm, Sat 8am–2pm, Sun 8am–12:30pm. Known for exceptional coffee, cinnamon scrolls with cream cheese frosting, cookies, pastries, and light food. Warm, bright and welcoming atmosphere. Community hub in Caulfield."
+  },
+  "brief_context": {
+    "tone": "warm, community, artisan — neighbourhood cafe that knows your name",
+    "services": ["Specialty coffee", "Pastries & baked goods", "Light food menu", "Cinnamon scrolls", "Cookies"],
+    "target_audience": "Caulfield locals, coffee lovers, weekend brunch crowd"
+  },
+  "_intel": {
+    "business": {
+      "name": "Communal Market",
+      "industry": "hospitality",
+      "location": "949 Glen Huntly Rd, Caulfield VIC 3162",
+      "google_rating": 5.0,
+      "review_count": 118,
+      "existing_issues": ["No website"],
+      "existing_strengths": ["Perfect 5★", "Community favourite", "Outstanding coffee + pastries"]
+    },
+    "existing_site": { "url": null, "content": "" },
+    "brief_context": {
+      "tone": "warm, artisan, community — neighbourhood cafe that makes people feel at home",
+      "mood": "light, warm, inviting — cream, warm white, soft tan tones. Not corporate. Human."
+    }
+  },
+  "_brand": {
+    "extracted": false,
+    "fonts": ["Playfair Display", "Inter"],
+    "darkTheme": false,
+    "bgColour": "#ffffff",
+    "brandColours": ["#2c1810", "#e8d5b0", "#f5f0e8"],
+    "logoUrl": null,
+    "social": {},
+    "booking": null,
+    "downloaded": {
+      "logo": null,
+      "images": [
+        "/assets/images/photo-00.jpg",
+        "/assets/images/photo-01.jpg",
+        "/assets/images/photo-02.jpg",
+        "/assets/images/photo-03.jpg",
+        "/assets/images/photo-04.jpg",
+        "/assets/images/photo-05.jpg",
+        "/assets/images/photo-06.jpg",
+        "/assets/images/photo-07.jpg",
+        "/assets/images/photo-08.jpg",
+        "/assets/images/photo-09.jpg"
+      ]
+    }
+  },
+  "_reviews": [
+    { "author": "Julia Gomes Ribeiro", "rating": 5, "text": "This has become my favourite coffee spot in the area! The coffee is incredible, the cookie is delicious, and don't even get me started on the cinnamon scroll — absolutely divine." },
+    { "author": "Mike G", "rating": 5, "text": "A bright and welcoming cafe. The coffee is amazing and definitely worth a visit for this alone. Additionally they make lovely pastries and food." },
+    { "author": "Steven Jeconiah", "rating": 5, "text": "It's easy to see why this spot has a five-star rating. The cinnamon scroll topped with cream cheese frosting is next level." }
+  ]
+}

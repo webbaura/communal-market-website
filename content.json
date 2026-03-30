@@ -1,0 +1,62 @@
+{
+  "business": {
+    "name": "Communal Market",
+    "tagline": "Gather. Sip. Shop.",
+    "description": "Communal Market is a neighbourhood cafe and bakery in Caulfield, Melbourne. Perfect 5-star Google rating. Specialty coffee, cinnamon scrolls, pastries, and light food made fresh daily.",
+    "industry": "hospitality",
+    "location": "Caulfield, Melbourne",
+    "address": {
+      "street": "949 Glen Huntly Rd",
+      "city": "Caulfield",
+      "state": "VIC",
+      "postcode": "3162",
+      "country": "Australia"
+    },
+    "phone": null
+  },
+  "seo": {
+    "siteUrl": "https://communalmarket.com.au",
+    "keywords": [
+      "Communal Market",
+      "Caulfield cafe",
+      "cafe Caulfield",
+      "bakery Caulfield",
+      "coffee Caulfield",
+      "cinnamon scrolls Melbourne",
+      "best cafe Glen Huntly Road",
+      "specialty coffee Caulfield",
+      "neighbourhood cafe Melbourne"
+    ]
+  },
+  "social": {},
+  "pages": {
+    "home": {
+      "hero": {
+        "headline": "Communal Market",
+        "subheadline": "Cafe & Bakery · Caulfield",
+        "descriptor": "Your neighbourhood spot for specialty coffee, freshly baked pastries, and light food — made with care, served with warmth.",
+        "cta_primary": "Get Directions",
+        "cta_secondary": "See Our Menu",
+        "image_alt": "Communal Market storefront on Glen Huntly Road, Caulfield"
+      }
+    },
+    "about": {
+      "headline": "About Communal Market",
+      "content": "A neighbourhood cafe and bakery in the heart of Caulfield, serving specialty coffee, freshly baked pastries, and light food made with care."
+    },
+    "services": {
+      "headline": "What We Serve",
+      "subheadline": "From the first coffee of the morning to a late lunch — everything is made fresh daily."
+    },
+    "portfolio": {
+      "headline": "Gallery",
+      "subheadline": ""
+    },
+    "contact": {
+      "headline": "Find Us",
+      "subheadline": "We're on Glen Huntly Road in Caulfield — a short walk from Caulfield station.",
+      "email": "",
+      "cta": "Get Directions"
+    }
+  }
+}
