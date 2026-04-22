@@ -62,11 +62,15 @@ const galleryImages = [
 
 function RatingBadge() {
   return (
-    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.95)', boxShadow: '0 2px 12px rgba(44,24,16,0.1)' }}>
+    <Link
+      href="/find-us"
+      className="inline-flex items-center gap-2 px-4 py-2 rounded-full transition-shadow hover:shadow-lg"
+      style={{ backgroundColor: 'rgba(255,255,255,0.95)', boxShadow: '0 2px 12px rgba(44,24,16,0.1)' }}
+    >
       <AnimatedStars count={5} size={16} color="#c4956a" delayMs={100} />
       <span className="text-sm font-semibold" style={{ color: '#2c1810' }}>5.0</span>
       <span className="text-sm" style={{ color: '#8b7355' }}>· 118 reviews</span>
-    </div>
+    </Link>
   );
 }
 
