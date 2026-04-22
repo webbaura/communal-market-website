@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/dir/?api=1&destination=Communal+Market,+949+Glen+Huntly+Rd,+Caulfield+South+VIC+3162';
-const GOOGLE_MAPS_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.8!2d145.023!3d-37.882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCommunal+Market!5e0!3m2!1sen!2sau!4v1';
+const GOOGLE_MAPS_EMBED = 'https://maps.google.com/maps?q=Communal+Market,+949+Glen+Huntly+Rd,+Caulfield+South+VIC+3162,+Australia&t=&z=16&ie=UTF8&iwloc=B&output=embed';
 
 
 export default function FindUsPage() {

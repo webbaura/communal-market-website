@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   authors: [{ name: content.business.name }],
   creator: content.business.name,
   metadataBase: new URL(content.seo?.siteUrl || 'https://communalmarket.com.au'),
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_AU',

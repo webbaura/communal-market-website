@@ -23,7 +23,7 @@ const securityHeaders = [
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: https:",
       `connect-src 'self'${isDev ? ' ws: wss:' : ''}`,
-      "frame-src 'self' https://www.google.com",
+      "frame-src 'self' https://www.google.com https://maps.google.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",
