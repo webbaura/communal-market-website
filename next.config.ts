@@ -6,6 +6,8 @@ import type { NextConfig } from 'next';
  * Rules: Performance, Security, SEO, CWV compliance.
  */
 
+const isDev = process.env.NODE_ENV !== 'production';
+
 const securityHeaders = [
   { key: 'X-Content-Type-Options',    value: 'nosniff' },
   { key: 'X-Frame-Options',           value: 'DENY' },
@@ -16,11 +18,11 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline'",
+      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}`,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: https:",
-      "connect-src 'self'",
+      `connect-src 'self'${isDev ? ' ws: wss:' : ''}`,
       "frame-src 'self' https://www.google.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
@@ -35,22 +37,30 @@ const nextConfig: NextConfig = {
 
   // Security headers on all routes
   async headers() {
-    return [
+    const headers = [
       {
         source: '/(.*)',
         headers: securityHeaders,
       },
-      // Content-hashed static assets — cache forever
-      {
-        source: '/_next/static/(.*)',
-        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
-      },
-      // Public assets — 30 days with SWR
-      {
-        source: '/(.*)\\.(png|jpg|jpeg|webp|avif|svg|ico|woff|woff2)',
-        headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' }],
-      },
     ];
+
+    // Cache headers only in production
+    if (!isDev) {
+      headers.push(
+        // Content-hashed static assets — cache forever
+        {
+          source: '/_next/static/(.*)',
+          headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+        },
+        // Public assets — 30 days with SWR
+        {
+          source: '/(.*)\\.(png|jpg|jpeg|webp|avif|svg|ico|woff|woff2)',
+          headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' }],
+        },
+      );
+    }
+
+    return headers;
   },
 
   // Image optimisation — CWV: LCP + CLS
@@ -77,18 +87,6 @@ const nextConfig: NextConfig = {
 
   // Smallest deployment artefact
   output: 'standalone',
-
-  // Redirect www → apex (canonical URL hygiene)
-  async redirects() {
-    return [
-      {
-        source:      '/:path*',
-        has:         [{ type: 'host', value: 'www\\.(?<domain>.+)' }],
-        destination: 'https://:domain/:path*',
-        permanent:   true,
-      },
-    ];
-  },
 
   // Don't expose framework in response headers
   poweredByHeader: false,
