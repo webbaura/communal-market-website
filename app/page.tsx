@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, MapPin, Clock, Coffee, CakeSlice, Sandwich, ArrowRight } from 'lucide-react';
 import OpenToday from '@/components/OpenToday';
+import AnimatedStars from '@/components/AnimatedStars';
 
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/dir/?api=1&destination=Communal+Market,+949+Glen+Huntly+Rd,+Caulfield+South+VIC+3162';
 
@@ -62,11 +63,7 @@ const galleryImages = [
 function RatingBadge() {
   return (
     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.95)', boxShadow: '0 2px 12px rgba(44,24,16,0.1)' }}>
-      <div className="flex items-center gap-0.5">
-        {[...Array(5)].map((_, i) => (
-          <Star key={i} size={16} fill="#c4956a" color="#c4956a" />
-        ))}
-      </div>
+      <AnimatedStars count={5} size={16} color="#c4956a" delayMs={100} />
       <span className="text-sm font-semibold" style={{ color: '#2c1810' }}>5.0</span>
       <span className="text-sm" style={{ color: '#8b7355' }}>· 118 reviews</span>
     </div>
