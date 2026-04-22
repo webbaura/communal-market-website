@@ -1,18 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <!-- Body / mantle -->
-  <ellipse cx="16" cy="12.5" rx="8" ry="9" fill="#7c6af7"/>
-  <!-- Subtle highlight -->
-  <ellipse cx="12.5" cy="8.5" rx="3" ry="2.2" fill="#fff" opacity="0.12"/>
-  <!-- Eyes -->
-  <circle cx="12.8" cy="11.5" r="1.8" fill="#fff" opacity="0.92"/>
-  <circle cx="19.2" cy="11.5" r="1.8" fill="#fff" opacity="0.92"/>
-  <circle cx="13.2" cy="11.9" r="0.9" fill="#1c1040"/>
-  <circle cx="19.6" cy="11.9" r="0.9" fill="#1c1040"/>
-  <!-- Tentacles — 6, curving down with slight wiggle -->
-  <path d="M8.5 19.5 C7 22 8 24.5 7 27" stroke="#7c6af7" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-  <path d="M11 21 C10.5 23.5 11.5 25.5 10.5 28" stroke="#7c6af7" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-  <path d="M14 21.5 C13.5 24 14.5 26 14 28.5" stroke="#7c6af7" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-  <path d="M18 21.5 C18.5 24 17.5 26 18 28.5" stroke="#7c6af7" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-  <path d="M21 21 C21.5 23.5 20.5 25.5 21.5 28" stroke="#7c6af7" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-  <path d="M23.5 19.5 C25 22 24 24.5 25 27" stroke="#7c6af7" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <!-- Coffee cup body -->
+  <path d="M6 10h16v14a4 4 0 01-4 4h-8a4 4 0 01-4-4V10z" fill="#2c1810"/>
+  <!-- Coffee liquid -->
+  <path d="M7 12h14v10a3 3 0 01-3 3H10a3 3 0 01-3-3V12z" fill="#c4956a"/>
+  <!-- Handle -->
+  <path d="M22 12h2a3 3 0 010 6h-2" stroke="#2c1810" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Steam wisps -->
+  <path d="M10 6c0-2 2-2 2-4" stroke="#2c1810" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M14 7c0-2 2-2 2-4" stroke="#2c1810" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M18 6c0-2 2-2 2-4" stroke="#2c1810" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
 </svg>
